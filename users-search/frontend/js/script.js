@@ -90,7 +90,7 @@ async function renderUsersList() {
     </div>
      `;
   } else {
-    elUsersList.innerHTML = `<div class="card-panel lighten-4"> Usuários não encontrados</div`;
+    elUsersList.innerHTML = `<div class="card-panel lighten-4"> Users not found</div`;
   }
 }
 
@@ -139,6 +139,6 @@ function renderUsersSumary() {
     </div>
     `;
   } else {
-    elUsersSumary.innerHTML = `<div class="card-panel lighten-4"> Nada a ser mostrado</div`;
+    elUsersSumary.innerHTML = `<div class="card-panel lighten-4"> Nothing to show</div`;
   }
 }

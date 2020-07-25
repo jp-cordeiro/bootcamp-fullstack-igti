@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <p>
+          <span> (R) Red </span>
+          <input
+            id="redRangeInput"
+            type="range"
+            value="0"
+            min="0"
+            max="255"
+            onchange="changeValue('red')"
+          />
+          <input
+            id="redValue"
+            type="text"
+            style="width: 40px;"
+            value="0"
+            disabled
+            readonly
+          />
+        </p>
+        <p>
+          <span> (G) Green </span>
+          <input
+            id="greenRangeInput"
+            type="range"
+            value="0"
+            min="0"
+            max="255"
+            onchange="changeValue('green')"
+          />
+          <input
+            id="greenValue"
+            type="text"
+            style="width: 40px;"
+            value="0"
+            disabled
+            readonly
+          />
+        </p>
+        <p>
+          <span> (B) Blue </span>
+          <input
+            id="blueRangeInput"
+            type="range"
+            value="0"
+            min="0"
+            max="255"
+            onchange="changeValue('blue')"
+          />
+          <input
+            id="blueValue"
+            type="text"
+            style="width: 40px;"
+            value="0"
+            disabled
+            readonly
+          />
+        </p>
+      </div>
+      <div>
+        <div
+          id="boxColor"
+          style="height: 50px; width: 50px; border: 0.5px solid #c3c3c3;"
+        ></div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
