@@ -9,7 +9,7 @@ Repositório criado para armazenar as atividades realizadas durante o curso.
 ### RGB Pallete
 **[RGB Pallete](/rgb-pallete)** - Três range inputs representando os valores da escala RGB, a alteração de cada input refletirá na background collor de uma div específica. Para ver o resultado final, basta clicar [aqui](https://rgb-selector-by-maycon.surge.sh/).
 
-![rgb-pallete](https://user-images.githubusercontent.com/9435399/88466671-0eb6ad00-cea5-11ea-9a9d-e9e0ca78f1bb.gif)
+![rgb-pallete](https://user-images.githubusercontent.com/9435399/88466744-ea0f0500-cea5-11ea-9fad-6e456cb39300.gif)
 
 ### Users Search
 
