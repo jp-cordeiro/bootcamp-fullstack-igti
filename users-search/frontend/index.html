@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <style>
+      body {
+        padding: 25px;
+        background-color: #64b5f6;
+      }
+
+      input {
+        border-bottom: 1px solid black !important;
+        box-shadow: 0 1px 0 0 black !important;
+      }
+
+      input:focus {
+        border-bottom: 1px solid black !important;
+        box-shadow: 0 1px 0 0 black !important;
+      }
+
+      label {
+        color: black !important;
+      }
+
+      label.active {
+        color: black !important;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .center {
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <title>Users Search</title>
+  </head>
+  <body>
+    <div class="card-panel grey lighten-4">
+      <h1>Users Search</h1>
+
+      <div class="row">
+        <form action="#">
+          <div class="input-field col s10 m10 l10">
+            <input id="user-name" type="text" class="validate" />
+            <label for="user-name">Name</label>
+          </div>
+
+          <a
+            href="#"
+            class="waves-effect waves-light btn col s2 m2 l2"
+            onclick="searchUsers()"
+            >Search</a
+          >
+        </form>
+      </div>
+
+      <div class="card grey lighten-1">
+        <div class="card-content">
+          <span class="card-title"></span>
+
+          <div class="row">
+            <div id="users-list" class="col s6 m6 l6"></div>
+            <div id="users-sumary" class="col s6 m6 l6"></div>
+          </div>
+
+          <div id="spinner" class="row flex center">
+            <div class="preloader-wrapper active">
+              <!-- spinner-blue -->
+              <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                  <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+            <span style="margin-left: 1rem;">Aguarde ...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
